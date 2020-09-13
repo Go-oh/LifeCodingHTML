@@ -1,0 +1,85 @@
+<!doctype html>
+<head>
+    <meta charset="utf-8">
+    <title>폼과 테이블 만들기 예제</title>
+    <style type="text/css">
+    
+        #wrap{
+            width: 860px;
+            background: #ffffff;
+            margin: 0 auto;
+            border-right: 5px solid #0c0303;
+            border-left: 5px solid #000000;
+        }
+        .class{
+             clear: both;
+        }
+        .movieTable{
+            /* border-spacing: 0; */
+            /* width:100%; */
+        }
+        .movieTable th{
+            background: #eeee99;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-bottom: 5px solid #000000;
+        }
+        
+        .movieTable .poster{
+            width:8%; 
+        }
+
+        .movieTable td{
+            background: #ffffff;
+            border:none;
+        }
+        
+        .movieTable .number{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="header">
+            <span class="logo"><img src="http://bitly.kr/KfGEQBbucUm" alt="이미지1" width="300px">
+            </span>
+            <h1>CSS활용강의</h1>
+            <h2>테이블 활용</h2>
+            <div class="clear"></div>
+        </div>
+        <div id="content">
+            <h3>테이블을 만들고 꾸미기</h3>
+            <!-- /* border-spacing: 0; 과 동일 -->
+            <table cellspacing="0" cellpadding="0" class="movieTable">
+            <!-- thead : table header -->
+            <!-- th : table head -->
+            <!-- tr : table row -->
+            <!-- td : table data -->
+                <thead>
+                    <tr>
+                        <th class="number">번호</th>
+                        <th class="poster">포스터</th>
+                        <th>영화제목</th>
+                        <th>영화감독</th>
+                        <th>상영일</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td><img src="https://lh3.googleusercontent.com/proxy/B614zbi8WfqbLqiJmvtqMaOtLM9xsd2WiPTGQbpvCDAfvOGUU7zKF3TjPK0kglHfgNUx3l94hY7RbHppPLT2PEj9Rm9GDO9BX8uslDVGOnxP9tC9PRLhCdNUkFQxAZ17MwZizK5LwtE0rkJStFcpFScKWxgjiEUsSswDuyuBIGDOtcUP" sizes="10%"></td>
+                        <td>맘마미아</td>
+                        <td>필리다 로이드</td>
+                        <td>2008.9.3</td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+
+
+
+
+    </div>
+</body>
